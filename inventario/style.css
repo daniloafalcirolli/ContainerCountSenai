@@ -31,10 +31,10 @@ main {
 
 .opcoes>input {
     background-image: url("./assets/lupa.png");
-    background-position: 10px 6px;
+    background-position: 5px 6px;
     background-repeat: no-repeat;
     background-color:#d6d6d6;
-    padding:5px 0px 5px 43px;
+    padding:5px 0px 5px 35px;
     background-size: 24px;
     border-radius:20px;
     margin-top:20px;
@@ -47,7 +47,7 @@ main {
 }
 .opcoes>select {
     background-image: url("./assets/downarrow.png");
-    background-position: 110px 5px;
+    background-position: right 5px;
     background-repeat: no-repeat;
     background-color:#d6d6d6;
     padding:5px 0px 5px 10px;
