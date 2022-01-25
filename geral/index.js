@@ -1,7 +1,14 @@
 (init)()
 
 function init(){
-addEvent();
+    processLog();
+    addEvent();
+}
+
+function processLog(){
+    if(localStorage.getItem('user') == undefined){
+        window.location.href = '../index.html';
+    }
 }
 
 function addEvent(){

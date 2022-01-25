@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./login/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
 </head>
 <body>
-    
+    <main>
+        <h1>Login</h1>
+        <div class="container">
+            <input id='cpf' type="number" placeholder="CPF">
+            <input id='password' type="password" placeholder="Senha">
+        </div>
+        <span class='logerr'>A senha ou cpf está invalido</span>
+        <button id='login'>Logar</button>
+    </main>
 </body>
-<script>
-    window.location.href = './inventario/index.html'
-</script>
+<script src="./login/index.js"></script>
+<script src="./login/md5.js"></script>
 </html>

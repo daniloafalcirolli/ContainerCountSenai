@@ -1,4 +1,4 @@
-(init)();
+(init)()
 
 function init(){
     addEvent();

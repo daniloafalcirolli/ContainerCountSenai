@@ -65,7 +65,7 @@ async function org(){
                 json.not.push(e);
             }
         })
-        let array = json.not.concat(json.verify);
+        let array = json.verify.concat(json.not);
         listartodos(array);
     }else{
         organizador.value = "";
