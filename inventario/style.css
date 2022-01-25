@@ -84,6 +84,8 @@ a>img{
 }
 
 .descricao{
+    text-align: center;
     display:flex;
     width:150px;
+    height:auto;
 }
