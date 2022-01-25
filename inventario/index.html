@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+</head>
+<body>
+    <main>
+        <span class="opcoes">
+            <span>Lista de itens</span>
+            <button id='adicionar'>Adicionar novo item</button>
+            <input id='procurar'>
+            <select id="organizador">
+                <option value="">Padrão</option>
+                <option value="ni">NI</option>
+                <option value="status">Status</option>
+            </select>
+        </span>
+        <table>
+            <thead>
+                <tr class="gray">
+                    <th>NI</th>
+                    <th>Descricão</th>
+                    <th>Status</th>
+                    <th>Editar</th>
+                </tr>
+            </thead>
+            <tbody id='informacoes'>
+                <tr class="model">
+                    <td id='ni'></td>
+                    <td id='descricao'></td>
+                    <td id='status'></td>
+                    <td><a><img src='./assets/lapis.png'></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+<script src="index.js"></script>
+<script src="../geral/index.js"></script>
+</html>

@@ -1,0 +1,84 @@
+@import url('../geral/style.css');
+main {
+    background-color:white;
+    border-radius:20px;
+    min-height: 96vh;
+    height: 100%;
+    width: 100%;
+    padding:15px;
+}
+
+.opcoes{
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    display:flex;
+    width:100%;
+}
+.opcoes>span{
+    font-size:25px;
+}
+
+.opcoes>button{
+    background-color:#6EDF80;
+    border-radius:10px;
+    color:white;
+    outline:none;
+    padding:10px;
+    border:none;
+    width:40%
+}
+
+.opcoes>input {
+    background-image: url("./assets/lupa.png");
+    background-position: 10px 6px;
+    background-repeat: no-repeat;
+    background-color:#d6d6d6;
+    padding:5px 0px 5px 43px;
+    background-size: 24px;
+    border-radius:20px;
+    margin-top:20px;
+    font-size:20px;
+    border:none;
+    width:55%;
+}
+.opcoes>input:focus{
+    outline:none;
+}
+.opcoes>select {
+    background-image: url("./assets/downarrow.png");
+    background-position: 110px 5px;
+    background-repeat: no-repeat;
+    background-color:#d6d6d6;
+    padding:5px 0px 5px 10px;
+    background-size: 26px;
+    border-radius:20px;
+    appearance:none;
+    margin-top:20px;
+    font-size:20px;
+    border:none;
+    width:40%;
+}
+.opcoes>select:focus{
+    outline:none;
+}
+
+table{
+    margin-top:30px;
+    width:100%;
+}
+td, th{
+    text-align:center;
+    padding:4px;
+}
+
+.gray{
+    background-color:#C4C4C4;
+}
+
+.model{
+    display:none;
+}
+a>img{
+    width:20px;
+}

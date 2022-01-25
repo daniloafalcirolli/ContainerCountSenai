@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <main>
+        <span class='opcoes'>
+            <span>Item</span>
+            <button id='adicionar'>Adicionar novo item</button>
+        </span>
+        <div>
+            <span>
+                <h1>NI:</h1>
+                <p id='ni'></p>
+            </span>
+            <span>
+                <h1>Descrição:</h1>
+                <p id='descricao'></p>
+            </span>
+            <span>
+                <h1>Status:</h1>
+                <p id='status'></p>
+            </span>
+        </div>
+        <span>
+            <p> Onde o item se encontra? </p>
+            <textarea id="sala"></textarea>
+        </span>
+        <span>
+            <p> Observações (caso esteja com a etiqueta rompida, duplicada, deixe todos os detalhes abaixo): </p>
+            <textarea id="obs"></textarea>
+        </span>
+        <span class='valid'>
+            <button id='verif'>Verificar</button>
+            <button id='apagar'>Excluir</button>
+        </span>
+    </main>
+</body>
+<script src="index.js"></script>
+<script src="../geral/index.js"></script>
+</html>
