@@ -82,3 +82,8 @@ td, th{
 a>img{
     width:20px;
 }
+
+.descricao{
+    display:flex;
+    width:150px;
+}

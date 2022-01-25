@@ -26,6 +26,11 @@ function buscar() {
     let tr = document.querySelectorAll('tr');
     tr.forEach((e,index)=> {
         if(index > 1){
+            e.style = "display:table-row";
+        }
+    })
+    tr.forEach((e,index)=> {
+        if(index > 1){
             if(!e.querySelectorAll('td')[0].innerHTML.includes(document.querySelector("#procurar").value)){
                 e.style = "display:none";
             }
