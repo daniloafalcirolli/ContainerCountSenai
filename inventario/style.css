@@ -69,7 +69,7 @@ table{
 }
 td, th{
     text-align:center;
-    padding:4px;
+    padding:4px
 }
 
 .gray{
@@ -84,8 +84,6 @@ a>img{
 }
 
 .descricao{
-    text-align: center;
-    display:flex;
-    width:150px;
-    height:auto;
+    word-wrap: break-word;
+    max-width: 130px;
 }
