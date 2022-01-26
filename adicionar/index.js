@@ -21,7 +21,7 @@ function salvar(){
         })
     }
     
-    if(document.querySelector('#ni').value == '' || document.querySelector('#nome').value == ''){
+    if(document.querySelector('#nome').value == ''){
         document.querySelector(".erro").style = 'display:flex';
     }else{
         let json = {
