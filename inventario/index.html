@@ -10,21 +10,23 @@
 <body>
     <main>
         <span class="opcoes">
-            <span>Lista de itens</span>
-            <button id='adicionar'>Adicionar novo item</button>
+            <div class="head">
+                <span>Lista de itens</span>
+                <button id='adicionar'>Adicionar novo item</button>
+            </div>
             <div class='legenda'>
-                <span id='orange'>
+                <div id='orange'>
                     <div class="leg orange"></div>
-                    <span class='ni-leg'>NI</span>
-                </span>
-                <span id='purple'>
+                    <span class='ni-leg'>Procurar por NI</span>
+                </div>
+                <div id='purple'>
                     <div class="leg purple"></div>
-                    <span class='nome-leg'>Descricão</span>
-                </span>
+                    <span class='nome-leg'>Procurar por descricão</span>
+                </div>
             </div>
             <div class='container'>
-                <input id='procurar' type='number' placeholder='pesquisa'>
                 <button id='type' class='orange'></button>
+                <input id='procurar' type='number' placeholder='pesquisa'>
                 <select id="organizador">
                     <option value="">Padrão</option>
                     <option value="ni">NI</option>

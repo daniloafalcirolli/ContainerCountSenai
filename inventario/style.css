@@ -1,128 +1,257 @@
 @import url('../geral/style.css');
-main {
-    background-color:white;
-    border-radius:20px;
-    min-height: 96vh;
-    height: 100%;
-    width: 100%;
+
+@media (max-width:1000px) {
+    main {
+        background-color:white;
+        border-radius:20px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .opcoes{
+        padding:15px;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap:wrap;
+        display:flex;
+        width:100%;
+    }
+    .head{
+        width:100%;
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+    }
+    .head>span{
+        font-size:25px;
+    }
+    #adicionar{
+        background-color:#6EDF80;
+        border-radius:10px;
+        color:white;
+        outline:none;
+        padding:10px;
+        border:none;
+        width:40%
+    }
+    
+    .legenda{
+        margin-top:20px;
+        width:100%;
+        justify-content:space-around;
+        display:flex;
+    }
+    .legenda>div{
+        display:flex;
+        align-items:center;
+    }
+    .leg{
+        width:30px;
+        height:30px;
+        margin-right:10px;
+        border-radius:50px;
+    }
+    
+    .container{
+        width: 100%;
+        margin-top:20px;
+        display:flex;
+        align-items:center;
+        justify-content:space-around;
+    }
+    #procurar {
+        background-image: url("./assets/lupa.png");
+        background-position: 5px 6px;
+        background-repeat: no-repeat;
+        background-color:#d6d6d6;
+        padding:5px 0px 5px 35px;
+        background-size: 24px;
+        border-radius:20px;
+        font-size:20px;
+        border:none;
+        width:40%;
+    }
+    #procurar:focus{
+        outline:none;
+    }
+    #type{
+        width:30px;
+        height:30px;
+        border-radius: 50px;
+        border:none;
+    }
+    #organizador {
+        background-image: url("./assets/downarrow.png");
+        background-position: right 5px;
+        background-repeat: no-repeat;
+        background-color:#d6d6d6;
+        padding:5px 0px 5px 10px;
+        background-size: 26px;
+        border-radius:20px;
+        appearance:none;
+        font-size:20px;
+        border:none;
+        width:40%;
+    }
+    #organizador:focus{
+        outline:none;
+    }
+    
+    table{
+        font-size:15px;
+        margin-top:20px;
+        width:100%;
+    }
+    td, th{
+        text-align:center;
+        padding:4px
+    }
+    
+    a>img{
+        width:30px;
+    }
+    
+    .descricao{
+        word-wrap: break-word;
+        max-width: 130px;
+    }
 }
 
-.opcoes{
-    padding:15px;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
-    display:flex;
-    width:100%;
+@media (min-width: 1000px){
+    main{
+        background-color:white;
+        border-radius:20px;
+        height: 100%;
+        width: 100%;
+    }
+    .opcoes{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:space-around;
+        flex-wrap: wrap;
+        padding:40px;
+    }
+    .head{
+        font-size:30px;
+        justify-content:space-around;
+        display:flex;
+        width:100%;
+        margin-bottom:20px;
+    }
+    #adicionar{
+        font-size:30px;
+        background-color:#6EDF80;
+        border-radius:10px;
+        color:white;
+        outline:none;
+        padding:10px;
+        border:none;
+    }
+    .legenda{
+        display:flex;
+        justify-content:space-around;
+        width:100%;
+        margin-bottom:40px;
+    }
+    .leg{
+        width:30px;
+        height:30px;
+        margin-right:10px;
+        border-radius:50px;
+    }
+    #purple, #orange{
+        background-color: #C4C4C4;
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        padding:10px;
+        border-radius:30px;
+    }
+    .container{
+        margin-bottom:40px;
+        width: 100%;
+        display:flex;
+        align-items:center;
+        justify-content:space-around;
+    }
+    #procurar {
+        background-image: url("./assets/lupa.png");
+        background-position: 5px 6px;
+        background-repeat: no-repeat;
+        background-color:#d6d6d6;
+        padding:5px 0px 5px 35px;
+        background-size: 24px;
+        border-radius:20px;
+        font-size:20px;
+        border:none;
+        width:30%;
+    }
+    #procurar:focus{
+        outline:none;
+    }
+    #type{
+        width:40px;
+        height:40px;
+        border-radius: 50px;
+        border:none;
+    }
+    #organizador {
+        background-image: url("./assets/downarrow.png");
+        background-position: right 5px;
+        background-repeat: no-repeat;
+        background-color:#d6d6d6;
+        padding:5px 0px 5px 10px;
+        background-size: 26px;
+        border-radius:20px;
+        appearance:none;
+        font-size:20px;
+        border:none;
+        width:10%;
+    }
+    #organizador:focus{
+        outline:none;
+    }
+    table{
+        padding:30px;
+        font-size:20px;
+        width:100%;
+    }
+    td, th{
+        text-align:center;
+        padding:10px
+    }
+    a{
+        width:100%;
+        padding:10px;
+        border-radius:20px;
+    }
+    a>img{
+        width:50px;
+    }
+    a>img:hover{
+        background-color:rgb(255, 181, 43);
+        border-radius:20px;
+    }
+    
+    .descricao{
+        word-wrap: break-word;
+        max-width: 130px;
+    }
 }
 
-.opcoes>span{
-    font-size:25px;
+#procurar::-webkit-outer-spin-button, #procurar::-webkit-inner-spin-button{
+    display:none;
 }
-#adicionar{
-    background-color:#6EDF80;
-    border-radius:10px;
-    color:white;
-    outline:none;
-    padding:10px;
-    border:none;
-    width:40%
+.model{
+    display:none;
 }
-
-.legenda{
-    margin-top:20px;
-    width:100%;
-    justify-content:space-around;
-    display:flex;
-}
-.legenda>span{
-    display:flex;
-    align-items:center;
-}
-.leg{
-    width:30px;
-    height:30px;
-    margin-right:10px;
-    border-radius:50px;
-}
-
 .orange{
     background-color:rgb(255, 181, 43);
 }
 .purple{
     background-color:purple;
 }
-
-.container{
-    width: 100%;
-    margin-top:20px;
-    display:flex;
-    align-items:center;
-    justify-content:space-around;
-}
-#procurar {
-    background-image: url("./assets/lupa.png");
-    background-position: 5px 6px;
-    background-repeat: no-repeat;
-    background-color:#d6d6d6;
-    padding:5px 0px 5px 35px;
-    background-size: 24px;
-    border-radius:20px;
-    font-size:20px;
-    border:none;
-    width:40%;
-}
-#procurar:focus{
-    outline:none;
-}
-#procurar::-webkit-outer-spin-button, #procurar::-webkit-inner-spin-button{
-    display:none;
-}
-#type{
-    width:30px;
-    height:30px;
-    border-radius: 50px;
-    border:none;
-}
-#organizador {
-    background-image: url("./assets/downarrow.png");
-    background-position: right 5px;
-    background-repeat: no-repeat;
-    background-color:#d6d6d6;
-    padding:5px 0px 5px 10px;
-    background-size: 26px;
-    border-radius:20px;
-    appearance:none;
-    font-size:20px;
-    border:none;
-    width:40%;
-}
-#organizador:focus{
-    outline:none;
-}
-
-table{
-    font-size:15px;
-    margin-top:20px;
-    width:100%;
-}
-td, th{
-    text-align:center;
-    padding:4px
-}
-
 .gray{
     background-color:#C4C4C4;
-}
-
-.model{
-    display:none;
-}
-a>img{
-    width:30px;
-}
-
-.descricao{
-    word-wrap: break-word;
-    max-width: 130px;
 }
