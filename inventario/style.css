@@ -15,11 +15,11 @@ main {
     display:flex;
     width:100%;
 }
+
 .opcoes>span{
     font-size:25px;
 }
-
-.opcoes>button{
+#adicionar{
     background-color:#6EDF80;
     border-radius:10px;
     color:white;
@@ -29,7 +29,38 @@ main {
     width:40%
 }
 
-.opcoes>input {
+.legenda{
+    margin-top:20px;
+    width:100%;
+    justify-content:space-around;
+    display:flex;
+}
+.legenda>span{
+    display:flex;
+    align-items:center;
+}
+.leg{
+    width:30px;
+    height:30px;
+    margin-right:10px;
+    border-radius:50px;
+}
+
+.orange{
+    background-color:rgb(255, 181, 43);
+}
+.purple{
+    background-color:purple;
+}
+
+.container{
+    width: 100%;
+    margin-top:20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+#procurar {
     background-image: url("./assets/lupa.png");
     background-position: 5px 6px;
     background-repeat: no-repeat;
@@ -37,15 +68,20 @@ main {
     padding:5px 0px 5px 35px;
     background-size: 24px;
     border-radius:20px;
-    margin-top:20px;
     font-size:20px;
     border:none;
-    width:55%;
+    width:42%;
 }
-.opcoes>input:focus{
+#procurar:focus{
     outline:none;
 }
-.opcoes>select {
+#type{
+    width:30px;
+    height:30px;
+    border-radius: 50px;
+    border:none;
+}
+#organizador {
     background-image: url("./assets/downarrow.png");
     background-position: right 5px;
     background-repeat: no-repeat;
@@ -54,17 +90,16 @@ main {
     background-size: 26px;
     border-radius:20px;
     appearance:none;
-    margin-top:20px;
     font-size:20px;
     border:none;
     width:40%;
 }
-.opcoes>select:focus{
+#organizador:focus{
     outline:none;
 }
 
 table{
-    margin-top:30px;
+    margin-top:20px;
     width:100%;
 }
 td, th{

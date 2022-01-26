@@ -12,12 +12,25 @@
         <span class="opcoes">
             <span>Lista de itens</span>
             <button id='adicionar'>Adicionar novo item</button>
-            <input id='procurar'>
-            <select id="organizador">
-                <option value="">Padrão</option>
-                <option value="ni">NI</option>
-                <option value="status">Status</option>
-            </select>
+            <div class='legenda'>
+                <span>
+                    <div class="leg orange"></div>
+                    <span class='ni-leg'>NI</span>
+                </span>
+                <span>
+                    <div class="leg purple"></div>
+                    <span class='nome-leg'>Descricão</span>
+                </span>
+            </div>
+            <div class='container'>
+                <input id='procurar' type='number' placeholder='pesquisa'>
+                <button id='type' class='orange'></button>
+                <select id="organizador">
+                    <option value="">Padrão</option>
+                    <option value="ni">NI</option>
+                    <option value="status">Status</option>
+                </select>
+            </div>
         </span>
         <table>
             <thead>
