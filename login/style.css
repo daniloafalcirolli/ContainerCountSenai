@@ -33,6 +33,9 @@ main{
 .container>input:focus{
     outline:none;
 }
+.container>input::-webkit-outer-spin-button, .container>input::-webkit-inner-spin-button{
+    display:none;
+}
 
 button{
     background-color:#6EDF80;
@@ -53,4 +56,4 @@ button{
     color:white;
     border-radius:10px;
     width:60%;
-}
+}    

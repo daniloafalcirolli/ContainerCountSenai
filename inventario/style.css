@@ -70,10 +70,13 @@ main {
     border-radius:20px;
     font-size:20px;
     border:none;
-    width:42%;
+    width:40%;
 }
 #procurar:focus{
     outline:none;
+}
+#procurar::-webkit-outer-spin-button, #procurar::-webkit-inner-spin-button{
+    display:none;
 }
 #type{
     width:30px;
