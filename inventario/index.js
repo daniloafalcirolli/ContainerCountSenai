@@ -4,9 +4,8 @@ function init(){
 }
 
 function addEvent(){
-    document.querySelector('#type').addEventListener('click',()=>{
-        trocarBusca();
-    })
+    document.querySelector('#orange').addEventListener('click',()=>{orange();})
+    document.querySelector('#purple').addEventListener('click',()=>{purple();})
     document.querySelector("#organizador").addEventListener("change", ()=>{
         let item = window.location.href.split("?");
         window.location.href = item[0]+"?org="+document.querySelector("#organizador").value;
@@ -16,16 +15,15 @@ function addEvent(){
     })
 }
 
-function trocarBusca(){
-    if(document.querySelector('#type').classList.contains('orange')){
-        document.querySelector('#type').classList.remove('orange');
-        document.querySelector('#type').classList.toggle('purple');
-        document.querySelector("#procurar").type = 'text'
-    }else{
-        document.querySelector('#type').classList.remove('purple');
-        document.querySelector('#type').classList.toggle('orange');
-        document.querySelector("#procurar").type = 'number'
-    }
+function purple(){
+    document.querySelector('#type').classList.remove('orange');
+    document.querySelector('#type').classList.add('purple');
+    document.querySelector("#procurar").type = 'text'
+}
+function orange(){
+    document.querySelector('#type').classList.remove('purple');
+    document.querySelector('#type').classList.add('orange');
+    document.querySelector("#procurar").type = 'number'
 }
 
 function selecionar(element) {
