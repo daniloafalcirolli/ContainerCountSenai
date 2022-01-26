@@ -44,13 +44,14 @@
     .legenda>div{
         display:flex;
         align-items:center;
+        width:100%;
+        justify-content:space-around;
         border-radius:20px;
         padding:9px;
     }
     .leg{
         width:30px;
         height:30px;
-        margin-left:10px;
         border-radius:50px;
     }
     
