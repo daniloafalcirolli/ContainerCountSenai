@@ -40,23 +40,15 @@ function buscar(n){
             e.style = 'display:table-row'
         }
     })
-    if(n==0){
-        tr.forEach((e,index)=>{
-            if(index>1){
-                if(!e.querySelectorAll('td')[n].innerHTML.includes(document.querySelector("#procurar").value)){
-                    e.style = 'display:none'
-                }
+
+    tr.forEach((e,index)=>{
+        if(index>1){
+            if(!e.querySelectorAll('td')[n].innerHTML.toLocaleLowerCase().includes(document.querySelector("#procurar").value.toLocaleLowerCase())){
+                e.style = 'display:none'
             }
-        })
-    }else{
-        tr.forEach((e,index)=>{
-            if(index>1){
-                if(!e.querySelectorAll('td')[n].innerHTML.toLocaleLowerCase().includes(document.querySelector("#procurar").value.toLocaleLowerCase())){
-                    e.style = 'display:none'
-                }
-            }
-        })
-    }
+        }
+    })
+    
 }
 
 async function org(){
