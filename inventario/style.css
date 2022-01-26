@@ -5,10 +5,10 @@ main {
     min-height: 96vh;
     height: 100%;
     width: 100%;
-    padding:15px;
 }
 
 .opcoes{
+    padding:15px;
     justify-content:space-between;
     align-items:center;
     flex-wrap:wrap;
