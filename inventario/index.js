@@ -16,11 +16,15 @@ function addEvent(){
 }
 
 function purple(){
+    document.querySelector('#orange').style = 'background-color:white'
+    document.querySelector('#purple').style = 'background-color:#C4C4C4'
     document.querySelector('#type').classList.remove('orange');
     document.querySelector('#type').classList.add('purple');
     document.querySelector("#procurar").type = 'text'
 }
 function orange(){
+    document.querySelector('#purple').style = 'background-color:white'
+    document.querySelector('#orange').style = 'background-color:#C4C4C4'
     document.querySelector('#type').classList.remove('purple');
     document.querySelector('#type').classList.add('orange');
     document.querySelector("#procurar").type = 'number'
@@ -40,7 +44,6 @@ function buscar(n){
             e.style = 'display:table-row'
         }
     })
-
     tr.forEach((e,index)=>{
         if(index>1){
             if(!e.querySelectorAll('td')[n].innerHTML.toLocaleLowerCase().includes(document.querySelector("#procurar").value.toLocaleLowerCase())){

@@ -38,17 +38,19 @@
     .legenda{
         margin-top:20px;
         width:100%;
-        justify-content:space-around;
+        justify-content:space-between;
         display:flex;
     }
     .legenda>div{
         display:flex;
         align-items:center;
+        border-radius:20px;
+        padding:9px;
     }
     .leg{
         width:30px;
         height:30px;
-        margin-right:10px;
+        margin-left:10px;
         border-radius:50px;
     }
     
@@ -157,16 +159,22 @@
     .leg{
         width:30px;
         height:30px;
-        margin-right:10px;
+        margin-left:10px;
         border-radius:50px;
     }
-    #purple, #orange{
+    #orange{
         background-color: #C4C4C4;
+    }
+    #purple, #orange{
+        font-size:30px;
         display:flex;
         justify-content:space-around;
         align-items:center;
         padding:10px;
         border-radius:30px;
+    }
+    #purple:hover, #orange:hover{
+        cursor:pointer;
     }
     .container{
         margin-bottom:40px;
@@ -177,13 +185,13 @@
     }
     #procurar {
         background-image: url("./assets/lupa.png");
-        background-position: 5px 6px;
+        background-position: 5px 10px;
         background-repeat: no-repeat;
         background-color:#d6d6d6;
-        padding:5px 0px 5px 35px;
-        background-size: 24px;
+        padding:5px 0px 5px 40px;
+        background-size: 29px;
         border-radius:20px;
-        font-size:20px;
+        font-size:30px;
         border:none;
         width:30%;
     }
@@ -198,14 +206,14 @@
     }
     #organizador {
         background-image: url("./assets/downarrow.png");
-        background-position: right 5px;
+        background-position: right 10px;
         background-repeat: no-repeat;
         background-color:#d6d6d6;
         padding:5px 0px 5px 10px;
-        background-size: 26px;
+        background-size: 29px;
         border-radius:20px;
         appearance:none;
-        font-size:20px;
+        font-size:30px;
         border:none;
         width:10%;
     }
